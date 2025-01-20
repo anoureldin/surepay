@@ -1,5 +1,5 @@
 /* global timapi */
-function send_Amount(Amount)
+/*function send_Amount(Amount)
     {
         try {
              var status = Android.startPayment(Amount.toString());
@@ -23,7 +23,32 @@ function send_Amount(Amount)
             } catch (error) {
               console.error(error);
         }
+    }*/
+
+function sendAmount(EnteredAmount, successCallback, errorCallback, onConnectFailed) {
+    try {
+        // Simulate interaction with a payment system, such as calling Android API
+        var status = Android.startPayment(EnteredAmount.toString());
+
+        // Handle different payment statuses
+        switch (status.toLowerCase()) {
+            case "success":
+                console.log("Approved");
+                successCallback("Transaction successful"); // Call success callback
+                break;
+            case "failed":
+                console.log("Transaction failed");
+                errorCallback("Transaction failed"); // Call error callback
+                break;
+            default:
+                console.warn("Invalid payment status:", status);
+                errorCallback("Invalid payment status"); // Call error callback
+        }
+    } catch (error) {
+        console.error("Error during payment:", error);
+        onConnectFailed("Connection failed: " + error.message); // Call connection failed callback
     }
+}
 
 /*function paymentCallback(status) {
       // Check if input is a string
@@ -121,21 +146,48 @@ var PaymentSix = PaymentInterface.extend({
     /**
      * @override
      */
+    /*
     send_payment_request: function () {
         var Amount =this.pos.get_order().selected_paymentline.amount*100;
         this._super.apply(this, arguments);
         this.pos.get_order().selected_paymentline.set_payment_status('waitingCard');
         return send_Amount(Amount);
     },
-
-    /**
+    */
+    
      * @override
-     */
+     
     send_payment_reversal: function () {
         this._super.apply(this, arguments);
         this.pos.get_order().selected_paymentline.set_payment_status('reversing');
         return this._sendTransaction(timapi.constants.TransactionType.reversal);
     },
+    
+
+    send_payment_request: function () {
+    var Amount = this.pos.get_order().selected_paymentline.amount * 100;  // Convert to cents
+    this._super.apply(this, arguments);
+    this.pos.get_order().selected_paymentline.set_payment_status('waitingCard');
+
+    // Define the success, error, and connection failure callback functions
+    var successCallback = (response) => {
+        console.log("Payment successful:", response);
+        this.transactionResolve(true); // Resolve the promise with success
+    };
+
+    var errorCallback = (errorCode) => {
+        console.error("Payment failed with error:", errorCode);
+        this.transactionResolve(false); // Resolve the promise with failure
+    };
+
+    var onConnectFailed = (message) => {
+        console.error("Connection failed:", message);
+        this.transactionResolve(false); // Resolve the promise with failure
+    };
+
+    // Call the sendAmount function with the necessary arguments
+    return sendAmount(Amount.toFixed(2), successCallback, errorCallback, onConnectFailed);
+    }
 
     send_balance: function () {
         this.terminal.balanceAsync();
