@@ -1,0 +1,594 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* electronic_pos_qr_saudi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.1alpha1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-05 05:34+0000\n"
+"PO-Revision-Date: 2021-10-05 05:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "% Discount"
+msgstr "% De descuento"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Address"
+msgstr "Dirección"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Amount"
+msgstr "Monto"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_before_tax
+msgid "Amount Before Tax"
+msgstr "Cantidad antes del impuesto"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_vat
+msgid "Amount Vat"
+msgstr "IVA"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_company_form_view_inheri
+msgid "Arabic Address"
+msgstr "Dirección árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_res_company__arabic_city
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_company_form_view_inheri
+msgid "Arabic City"
+msgstr "Ciudad árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_res_company__sh_arabic_name
+msgid "Arabic Name"
+msgstr "Nombre árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_pos_qr_saudi_config
+msgid "Arabic Receipt Configuration"
+msgstr "Configuración de recibos árabes"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_company_form_view_inheri
+msgid "Arabic Street 2..."
+msgstr "Calle árabe 2 ..."
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_res_company__arabic_street
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_company_form_view_inheri
+msgid "Arabic Street..."
+msgstr "Calle árabe ..."
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_res_company__arabic_street2
+msgid "Arabic Street2..."
+msgstr "ARABIC STREET2 ..."
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_company_form_view_inheri
+msgid "Arabic ZIP"
+msgstr "Zip árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_res_company__arabic_zip
+msgid "Arabic Zip"
+msgstr "Zip árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_product_product_view_inheri
+msgid "Arabic name"
+msgstr "Nombre árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__pos_config__qr_code_setting__bottom
+msgid "Bottom"
+msgstr "Fondo"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "CR No."
+msgstr "CR No."
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Cashier"
+msgstr "Cajero"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Change"
+msgstr "Cambio"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model,name:electronic_pos_qr_saudi.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__create_date
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_product_product__sh_arabic_name
+msgid "Custom Name"
+msgstr "Nombre personalizado"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__partner_id
+#, python-format
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__date_order
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__sh_display_arabic_address
+msgid "Display Arabic Address"
+msgstr "Mostrar dirección árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__sh_display_arabic_name
+msgid "Display Product Arabic Name"
+msgstr "Mostrar producto Nombre árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__fields_id
+msgid "Fields"
+msgstr "Los campos"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__id
+msgid "ID"
+msgstr "IDENTIFICACIÓN"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Invoice - الفاتورة"
+msgstr "Factura - الفاتورة"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Invoice No"
+msgstr "Factura no"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Item Name"
+msgstr "Nombre del árticulo"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__label
+msgid "Label"
+msgstr "Etiqueta"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__write_date
+msgid "Last Update on"
+msgstr "Última actualización en"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Logo"
+msgstr "Logo"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Mobile"
+msgstr "Móvil"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "NET AMOUNT"
+msgstr "IMPORTE NETO"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_paid
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_payment_method__sh_payment_method_arabic_name
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_payment_method_arebic_name_view_inheri
+msgid "Payment Method Arabic Name"
+msgstr "Método de pago Nombre árabe"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__config_id
+msgid "Point of Sale"
+msgstr "Punto de venta"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model,name:electronic_pos_qr_saudi.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Configuración de punto de venta"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model,name:electronic_pos_qr_saudi.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Métodos de pago de punto de venta."
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Price"
+msgstr "Precio"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model,name:electronic_pos_qr_saudi.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__qr_code_setting
+msgid "QR Code Position"
+msgstr "Posición del código QR"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__qr_code_height
+msgid ""
+"QR Code Size \n"
+" (Width x Height)"
+msgstr ""
+"Tamaño del código QR \n"
+" (Alto x ancho)"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__qr_code_width
+msgid "QR code Width"
+msgstr "Ancho de código QR"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Qty."
+msgstr "Cantidad."
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__pos_reference
+msgid "Receipt Number"
+msgstr "Número de recibo"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__qr_code_elements
+msgid "Receipt QR code Element"
+msgstr "Elemento de código QR de recibo"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_return
+msgid "Returned"
+msgstr "Devuelto"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__company_name
+msgid "Seller"
+msgstr "Vendedor"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__sequence_number
+msgid "Sequence Number"
+msgstr "Secuencia de números"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Shop name"
+msgstr "Nombre de tienda"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_pos_config__display_qr_code
+msgid "Show QR Code In Receipt"
+msgstr "Mostrar código QR en el recibo"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Table Name"
+msgstr "Nombre de la tabla"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_tax
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__pos_config__qr_code_setting__top
+msgid "Top"
+msgstr "Cima"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__amount_total
+msgid "Total"
+msgstr "Total"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Total After Discount"
+msgstr "Total después del descuento"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Total Before Discount"
+msgstr "Total antes de descuento"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "Total Discount Value"
+msgstr "Valor total de descuento"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__price_total
+msgid "Total Price"
+msgstr "Precio total"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "VAT"
+msgstr "IVA"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "VAT Reg No."
+msgstr "IVA No."
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_pos_qr_saudi_config
+msgid "Variants"
+msgstr "Variantes"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields.selection,name:electronic_pos_qr_saudi.selection__sh_pos_config_qr_elements__fields_id__vat
+msgid "Vat"
+msgstr "IVA"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_pos_qr_saudi_config
+msgid "Width"
+msgstr "Ancho"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "With a"
+msgstr "Con un"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model.fields,field_description:electronic_pos_qr_saudi.field_sh_pos_config_qr_elements__custom_field
+msgid "field"
+msgstr "campo"
+
+#. module: electronic_pos_qr_saudi
+#: model_terms:ir.ui.view,arch_db:electronic_pos_qr_saudi.sh_element_pos_qr_saudi_config
+msgid "height"
+msgstr "altura"
+
+#. module: electronic_pos_qr_saudi
+#: model:ir.model,name:electronic_pos_qr_saudi.model_sh_pos_config_qr_elements
+msgid "pos config qr elements"
+msgstr "POS Config QR Elements"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "إجمالي الخصم"
+msgstr "إجمالي الخصم"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "اسم الصنف"
+msgstr "اسم الصنف"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "اسم الطاولة"
+msgstr "اسم الطاولة"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "اسم المحل"
+msgstr "اسم المحل"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الإجمالي قبل الخصم"
+msgstr "الإجمالي قبل الخصم"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الإحمالي"
+msgstr "الإحمالي"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "البائع"
+msgstr "البائع"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الباقي"
+msgstr "الباقي"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "التاريخ"
+msgstr "التاريخ"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الجوال"
+msgstr "الجوال"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الرقم الضريبي"
+msgstr "الرقم الضريبي"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "السعر"
+msgstr "السعر"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الصافي"
+msgstr "الصافي"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "العميل"
+msgstr "العميل"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "الكمية"
+msgstr "الكمية"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "المبلغ"
+msgstr "المبلغ"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "رقم السجل التجاري"
+msgstr "رقم السجل التجاري"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "رقم الفاتورة"
+msgstr "رقم الفاتورة"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "عنوان"
+msgstr "عنوان"
+
+#. module: electronic_pos_qr_saudi
+#. openerp-web
+#: code:addons/electronic_pos_qr_saudi/static/src/xml/pos.xml:0
+#, python-format
+msgid "قيمة الضريبة"
+msgstr "قيمة الضريبة"

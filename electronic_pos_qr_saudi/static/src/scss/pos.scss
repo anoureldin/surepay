@@ -1,0 +1,101 @@
+.orderline-tbl {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.orderline-tbl th, .orderline-tbl td {
+    border: 1px solid #ddd; /* Add borders to cells */
+    padding: 8px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.orderline-tbl th {
+    background-color: #f2f2f2; /* Add background color to header cells */
+}
+
+.sh-pos-receipt-logo{
+	width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.pos-receipt .pos-receipt-header{
+    text-align: left;
+    font-size: 11px;
+}
+.pos-invoice-header{
+    border-bottom: 1.5px dashed gray;
+    font-size: 11px;
+}
+.orderline-tbl{
+    width: 100%;
+}
+.orderline-tbl thead, .sh-change{
+    border-bottom: 2px dashed black;
+    font-size: 11px;
+}
+.sh-orderline-header{
+    border-bottom: 1px solid black;
+    font-size: 11px;
+}
+.orderline-tbl thead th:last-child,.orderline-tbl tbody td:last-child{
+    text-align: right;
+}
+.pos-amount-content{
+    border-bottom: 1px dashed black;
+    font-size: 11px;
+}
+.sh-amount-content span:last-child, .sh-receipt-header span:last-child, .sh-change-content span:last-child{
+    text-align: right;
+}
+.sh-company-name{
+    text-align: center;
+}
+
+
+.pos .pos-receipt-container.sh_receipt_content > div {font-size: 8px !important;}
+
+.pos-receipt-print {
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+    direction: ltr;
+    font-size: 16px !important;
+    color: #000000;
+}
+
+@media print {
+    .pos .pos-receipt {
+        font-size: 10px !important;
+        width: 176px !important;
+    }
+}
+
+
+.sh_pos_receipt.pos-receipt .sh_address{font-size: 12px;text-align: center;}
+.sh_pos_receipt.pos-receipt .sh-company-name h5{font-weight: bold;margin: 10px 5px;font-size: 20px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header,
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table{table-layout: fixed;word-break: break-word;padding-bottom: 8px;width: 100%;font-weight: bold;}
+.sh_pos_receipt.pos-receipt .sh_text_left{text-align: left;}
+.sh_pos_receipt.pos-receipt .sh_text_center{text-align: center;}
+.sh_pos_receipt.pos-receipt .sh_text_right{text-align: right;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_28{width: 28%;padding: 5px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_3{width: 3%;padding: 5px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_38{width: 38%;padding: 5px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_invoice_width_24{width: 24%;padding: 5px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_invoice_width_44{width: 44%;padding: 5px;}
+.sh_pos_receipt.pos-receipt .sh_invoice_header{text-transform: uppercase;margin: 8px 5px;font-weight: bold;padding-bottom: 10px;border-bottom: 1.5px dashed gray;}
+
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table tbody td{vertical-align: top;padding: 8px 5px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_24{padding: 8px 5px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_16{padding: 8px 5px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_20{padding: 8px 5px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_40{padding: 8px 5px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table tbody .sh_discount{font-style: italic;color: #8f8f8f;}
+.pos-receipt.sh_pos_receipt .sh-change{padding: 4px 0px;}
+
+.sh_pos_receipt.pos-receipt .sh_edit_icon{margin-left: 5px;}
