@@ -1,12 +1,37 @@
-function printReceipt(receiptString)
-    {
-        try {
-            alert("Print Rece Function.");
-            Android.printReceipts(receiptString);   
-            } catch (error) {
-              console.error(error);
+function printReceipt(receiptString) {
+    try {
+        alert("Print Rece Function.");
+
+        if (typeof html2canvas === 'undefined') {
+            console.error('html2canvas is not loaded!');
+            return;
         }
+
+        var receiptElement = document.createElement('div');
+        receiptElement.innerHTML = receiptString;  
+
+        document.body.appendChild(receiptElement);
+
+        html2canvas(receiptElement).then(function(canvas) {
+            var img = new Image();
+            img.src = canvas.toDataURL();  
+
+            document.body.appendChild(img); 
+
+            if (window.Android && typeof Android.printReceipts === 'function') {
+                Android.printReceipts(img.src);
+            } else {
+                alert("Android.printReceipts is not available.");
+            }
+
+            document.body.removeChild(receiptElement);
+        }).catch(function(error) {
+            console.error("Error in html2canvas:", error);  
+        });
+    } catch (error) {
+        console.error("Error in printReceipt:", error);  
     }
+}
 
 
 odoo.define("electronic_pos_qr_saudi.ReceiptScreen", function (require) {
