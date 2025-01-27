@@ -1,6 +1,7 @@
 function printReceipt(receiptString)
     {
         try {
+            alert("Print Rece Function.");
             Android.printReceipts(receiptString);   
             } catch (error) {
               console.error(error);
@@ -81,6 +82,7 @@ odoo.define("electronic_pos_qr_saudi.ReceiptScreen", function (require) {
 
             }
             const receiptString = this.shorderReceipt.el.outerHTML;
+            alert("onMounted Function.");
             printReceipt(receiptString);
         }
         async _sendReceiptToCustomer() {
