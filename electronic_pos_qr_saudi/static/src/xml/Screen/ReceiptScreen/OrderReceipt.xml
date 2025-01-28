@@ -57,7 +57,7 @@
 		                    </t>
 		                </div>
                         <t t-if="!receipt.header_html and receipt.header">
-		                    <div style="white-space:pre-line; font-size: 16px;font-weight: bold;">
+		                    <div style="white-space:pre-line; font-size: 22px;font-weight: bold;">
 		                        <t t-esc="receipt.header"/>
 		                    </div>
 		                </t>
@@ -67,7 +67,7 @@
                     <div class='pos-receipt-header'>
 		                <table class='sh-receipt-header'>
 		                <!-- <tbody> -->
-                            <tr style="font-size: 18px;">
+                            <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_width_28">
 		                                <span class="sh_receipt_header_fix_width">CR No. </span>
 		                            </td>
@@ -91,7 +91,7 @@
 		                                <span class="sh_receipt_header_fix_width">رقم السجل التجاري</span>
 		                            </td>
 		                        </tr>
-                            <tr style="font-size: 18px;">
+                            <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_width_28">
 		                                <span class="sh_receipt_header_fix_width">VAT No. </span>
 		                            </td>
@@ -116,7 +116,7 @@
 		                            </td>
 		                        </tr>
                             <t t-if="env and env.pos and env.pos.get_order() and env.pos.get_order().get_refunded_order_ref() and env.pos.get_order().getHasRefundLines() and env.pos.get_order().get_refunded_order_ref().length > 0">
-		                        	<tr style="font-size: 18px;">
+		                        	<tr style="font-size: 22px;">
 			                            <td class="sh_text_left sh_width_28">
 			                                <span class="sh_receipt_header_fix_width">Simplified Invoiced Reference </span>
 			                            </td>
@@ -148,7 +148,7 @@
 		            	<div id='qr_image' style="text-align: center; margin: 10px"></div>
                         <!-- <div id='qr_image' style="text-align: center; margin: 10px"></div> -->
 		            </t>
-                    <div class="sh_invoice_header" style='text-align:center;font-size: 18px; '>
+                    <div class="sh_invoice_header" style='text-align:center;font-size: 22px; '>
 		            	<t t-if="env and env.pos and env.pos.get_order() and env.pos.get_order().get_refunded_order_ref() and env.pos.get_order().getHasRefundLines() and env.pos.get_order().get_refunded_order_ref().length > 0">
 		            		Simplified Credit Note - مذكرة ائتمان مبسطة
 		            	</t>
@@ -159,7 +159,7 @@
                     <div class='pos-invoice-header'>
 		                <table class='pos-invoice-content sh-receipt-header'>
 		                    <!-- <tbody> -->
-                            <tr style="font-size: 18px;">
+                            <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_invoice_width_24">
 		                                <span>Invoice No   </span>
 		                            </td>
@@ -167,7 +167,7 @@
 		                                <span class="sh_separator">:</span>
 		                            </td>
                                 <td class="sh_text_center sh_invoice_width_44">
-		                                <span style="font-size: 18px; font-weight: bold;">
+		                                <span style="font-size: 22px; font-weight: bold;">
 		                                    <t t-if='receipt.name'>
 		                                        <t t-esc='receipt.name'/>
 		                                    </t>
@@ -180,7 +180,7 @@
 		                                <span>رقم الفاتورة</span>
 		                            </td>
 		                        </tr>
-                            <tr style="font-size: 18px;">
+                            <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_width_28">
 		                                <span>Date </span>
 		                            </td>
@@ -188,7 +188,7 @@
 		                                <span class="sh_separator">:</span>
 		                            </td>
                                 <td class="sh_text_center sh_width_38">
-		                                <span style="font-size: 18px; font-weight: bold;">
+		                                <span style="font-size: 22px; font-weight: bold;">
 		                                    <t t-if='receipt.date'>
 		                                        <t t-esc='receipt.date.localestring'></t>
 		                                    </t>
@@ -198,12 +198,12 @@
 		                                <span class="sh_separator">:</span>
 		                            </td>
                                 <td class="sh_text_right sh_width_28">
-		                                <span style="font-size: 18px;">التاريخ</span>
+		                                <span style="font-size: 22px;">التاريخ</span>
 		                            </td>
 		                        </tr>
 
                             <t t-if='receipt.table'>
-		                            <tr style="font-size: 18px;">
+		                            <tr style="font-size: 22px;">
 		                                <td class="sh_text_left sh_width_28">
 		                                    <span>Table Name </span>
 		                                </td>
@@ -343,24 +343,24 @@
     <table class='orderline-tbl sh_orderline_table'>
         <thead>
             <th class="sh_orderline_width_24 sh_text_left">
-                <span style="padding: 5px 0px;line-height: 20px;font-size: 18px;">المبلغ</span>
+                <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;">المبلغ</span>
                 <br/>
-                <span style="padding: 5px 0px;font-size: 18px;">Amount</span>
+                <span style="padding: 5px 0px;font-size: 22px;">Amount</span>
             </th>
             <th class="sh_orderline_width_16 sh_text_center">
-                <span style="padding: 5px 0px;line-height: 20px;font-size: 18px;">الكمية </span>
+                <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;">الكمية </span>
                 <br/>
-                <span style="padding: 5px 0px;font-size: 18px;">Qty.</span>
+                <span style="padding: 5px 0px;font-size: 22px;">Qty.</span>
             </th>
             <th class="sh_orderline_width_20 sh_text_center">
-                <span style="padding: 5px 0px;line-height: 20px;font-size: 18px;"> السعر </span>
+                <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;"> السعر </span>
                 <br/>
-                <span style="padding: 5px 0px;font-size: 18px;"> Price </span>
+                <span style="padding: 5px 0px;font-size: 22px;"> Price </span>
             </th>
             <th class="sh_orderline_width_40 sh_text_right">
-                <span style="padding: 5px 0px;line-height: 20px;font-size: 18px;"> اسم الصنف </span>
+                <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;"> اسم الصنف </span>
                 <br/>
-                <span style="padding: 5px 0px;font-size: 18px;">Item Name</span>
+                <span style="padding: 5px 0px;font-size: 22px;">Item Name</span>
             </th>
         </thead>
         <tbody>
@@ -554,7 +554,7 @@
 		                </table>
 		            </div>
                     <div t-if="!receipt.footer_html and receipt.footer" class="pos-receipt-center-align"
-                         style="white-space:pre-line;font-size: 18px;font-weight: bold;">
+                         style="white-space:pre-line;font-size: 22px;font-weight: bold;">
 		                <t t-esc="receipt.footer"/>
                         <br/>
 		            </div>
@@ -756,12 +756,12 @@
                     <div class="before-footer"/>
 
                     <!-- Footer -->
-                    <div t-if="receipt.footer_html" class="pos-receipt-center-align"style="font-size:20px;">
+                    <div t-if="receipt.footer_html" class="pos-receipt-center-align"style="font-size:22px;">
 		                <t t-raw="receipt.footer_html"/>
 		            </div>
 
                     <div t-if="!receipt.footer_html and receipt.footer" class="pos-receipt-center-align"
-                         style="white-space:pre-line; font-size: 16px;font-weight: bold;">
+                         style="white-space:pre-line; font-size: 22px;font-weight: bold;">
 		                <br/>
                         <t t-esc="receipt.footer"/>
                         <br/>
