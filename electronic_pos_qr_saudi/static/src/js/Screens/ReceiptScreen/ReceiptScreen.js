@@ -1,7 +1,5 @@
 function printReceipt(receiptString) {
     try {
-        alert("Print Rece Function.");
-
         if (typeof html2canvas === 'undefined') {
             console.error('html2canvas is not loaded!');
             return;
@@ -107,7 +105,6 @@ odoo.define("electronic_pos_qr_saudi.ReceiptScreen", function (require) {
 
             }
             const receiptString = this.shorderReceipt.el.outerHTML;
-            alert("onMounted Function.");
             printReceipt(receiptString);
         }
         async _sendReceiptToCustomer() {
