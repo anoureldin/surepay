@@ -83,7 +83,7 @@
 .sh_pos_receipt.pos-receipt .sh_text_left{text-align: left;font-size: 22px;}
 .sh_pos_receipt.pos-receipt .sh_text_center{text-align: center;font-size: 22px;}
 .sh_pos_receipt.pos-receipt .sh_text_right{text-align: right;font-size: 22px;}
-.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_28{width: 28%;padding: 5px;font-size: 22px;}
+.sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_28{width: 28%;padding: 5px;font-size: 26px;font-weight: bold;"}
 .sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_3{width: 3%;padding: 5px;font-size: 22px;}
 .sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_width_38{width: 38%;padding: 5px;font-size: 22px;}
 .sh_pos_receipt.pos-receipt table.sh-receipt-header .sh_invoice_width_24{width: 24%;padding: 5px;font-size: 22px;}
@@ -91,10 +91,10 @@
 .sh_pos_receipt.pos-receipt .sh_invoice_header{text-transform: uppercase;margin: 8px 5px;font-weight: bold;padding-bottom: 10px;border-bottom: 1.5px dashed gray;font-size: 22px;}
 
 .sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table tbody td{vertical-align: top;padding: 8px 5px;font-size: 22px;}
-.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_24{padding: 8px 5px;font-size: 22px;}
-.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_16{padding: 8px 5px;font-size: 22px;}
-.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_20{padding: 8px 5px;font-size: 22px;}
-.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_40{padding: 8px 5px;font-size: 22px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_24{font-weight: bold;padding: 8px 5px;font-size: 22px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_16{font-weight: bold;padding: 8px 5px;font-size: 22px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_20{font-weight: bold;padding: 8px 5px;font-size: 22px;}
+.sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table .sh_orderline_width_40{font-weight: bold;padding: 8px 5px;font-size: 22px;}
 .sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table tbody .sh_discount{font-style: italic;color: #8f8f8f;font-size: 22px;}
 .pos-receipt.sh_pos_receipt .sh-change{padding: 4px 0px;}
 
