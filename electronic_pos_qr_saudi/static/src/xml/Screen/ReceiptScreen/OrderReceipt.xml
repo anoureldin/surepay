@@ -93,7 +93,7 @@
 		                        </tr>
                             <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_width_28">
-		                                <span class="sh_receipt_header_fix_width" style="font-weight: bold;font-size: 26px;">VAT No. </span>
+		                                <span class="sh_receipt_header_fix_width" style="font-weight: bold;font-size: 17px;">VAT No. </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -116,7 +116,7 @@
 		                            </td>
 		                        </tr>
                             <t t-if="env and env.pos and env.pos.get_order() and env.pos.get_order().get_refunded_order_ref() and env.pos.get_order().getHasRefundLines() and env.pos.get_order().get_refunded_order_ref().length > 0">
-		                        	<tr style="font-size: 22px;">
+		                        	<tr>
 			                            <td class="sh_text_left sh_width_28">
 			                                <span class="sh_receipt_header_fix_width">Simplified Invoiced Reference </span>
 			                            </td>
@@ -161,7 +161,7 @@
 		                    <!-- <tbody> -->
                             <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_invoice_width_24">
-		                                <span style="font-weight: bold;font-size: 26px;">Invoice No   </span>
+		                                <span style="font-weight: bold;font-size: 17px;">Invoice No   </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -182,7 +182,7 @@
 		                        </tr>
                             <tr style="font-size: 22px;">
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;">Date </span>
+		                                <span style="font-weight: bold;font-size: 17px;">Date </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -345,22 +345,22 @@
             <th class="sh_orderline_width_24 sh_text_left">
                 <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;">المبلغ</span>
                 <br/>
-                <span style="font-weight: bold;padding: 5px 0px;font-size: 26px;">Amount</span>
+                <span style="font-weight: bold;padding: 5px 0px;font-size: 17px;">Amount</span>
             </th>
             <th class="sh_orderline_width_16 sh_text_center">
                 <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;">الكمية </span>
                 <br/>
-                <span style="font-weight: bold;padding: 5px 0px;font-size: 26px;">Qty.</span>
+                <span style="font-weight: bold;padding: 5px 0px;font-size: 17px;">Qty.</span>
             </th>
             <th class="sh_orderline_width_20 sh_text_center">
                 <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;"> السعر </span>
                 <br/>
-                <span style="font-weight: bold;padding: 5px 0px;font-size: 26px;"> Price </span>
+                <span style="font-weight: bold;padding: 5px 0px;font-size: 17px;"> Price </span>
             </th>
             <th class="sh_orderline_width_40 sh_text_right">
                 <span style="padding: 5px 0px;line-height: 20px;font-size: 22px;"> اسم الصنف </span>
                 <br/>
-                <span style="font-weight: bold;padding: 5px 0px;font-size: 26px;">Item Name</span>
+                <span style="font-weight: bold;padding: 5px 0px;font-size: 17px;">Item Name</span>
             </th>
         </thead>
         <tbody>
@@ -389,7 +389,7 @@
 		                    <!-- <tbody> -->
                               <tr>
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;" >NET  AMOUNT W Tax </span>
+		                                <span style="font-weight: bold;font-size: 17px;" >NET  AMOUNT W Tax </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -410,7 +410,7 @@
 		                        </tr>
 							<tr>
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;" >Total Before Tax </span>
+		                                <span style="font-weight: bold;font-size: 17px;" >Total Before Tax </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -477,7 +477,7 @@
 <!--		                        </tr>-->
                             <tr>
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;" >VAT 15% </span>
+		                                <span style="font-weight: bold;font-size: 17px;" >VAT 15% </span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -506,7 +506,7 @@
 		                    <!-- <tbody> -->
                             <tr t-foreach="receipt.paymentlines" t-as="line" t-key="line.cid">
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;">
+		                                <span style="font-weight: bold;font-size: 17px;">
 		                                    <t t-esc="line.name"/>
 		                                </span>
 		                            </td>
@@ -514,7 +514,7 @@
 		                                <span class="sh_separator">:</span>
 		                            </td>
                                 <td class="sh_text_center sh_width_38">
-		                                <span style="font-weight: bold;font-size: 26px;">
+		                                <span style="font-weight: bold;font-size: 17px;">
 		                                    <span t-esc="env.pos.format_currency_no_symbol(line.amount)"/>
 
 		                                </span>
@@ -532,7 +532,7 @@
 		                        </tr>
                             <tr>
 		                            <td class="sh_text_left sh_width_28">
-		                                <span style="font-weight: bold;font-size: 26px;">Change</span>
+		                                <span style="font-weight: bold;font-size: 17px;">Change</span>
 		                            </td>
                                 <td class="sh_text_center sh_width_3">
 		                                <span class="sh_separator">:</span>
@@ -624,7 +624,7 @@
                     <br/>
                     <t t-if="receipt.is_gcc_country">
 		                <div class="pos-receipt-header">
-		                    <span id="title_english" style="font-weight: bold;font-size: 26px;">Simplified Tax Invoice</span>
+		                    <span id="title_english" style="font-weight: bold;font-size: 17px;">Simplified Tax Invoice</span>
 		                </div>
                         <div class="pos-receipt-header">
 		                    <span id="title_arabic">فاتورة ضريبية مبسطة</span>
