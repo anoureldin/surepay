@@ -21,29 +21,29 @@
 
 .pos-receipt .pos-receipt-header{
     text-align: left;
-    font-size: 11px;
+    font-size: 18px;
 }
 .pos-invoice-header{
     border-bottom: 1.5px dashed gray;
-    font-size: 11px;
+    font-size: 18px;
 }
 .orderline-tbl{
     width: 100%;
 }
 .orderline-tbl thead, .sh-change{
     border-bottom: 2px dashed black;
-    font-size: 11px;
+    font-size: 18px;
 }
 .sh-orderline-header{
     border-bottom: 1px solid black;
-    font-size: 11px;
+    font-size: 18px;
 }
 .orderline-tbl thead th:last-child,.orderline-tbl tbody td:last-child{
     text-align: right;
 }
 .pos-amount-content{
     border-bottom: 1px dashed black;
-    font-size: 11px;
+    font-size: 18px;
 }
 .sh-amount-content span:last-child, .sh-receipt-header span:last-child, .sh-change-content span:last-child{
     text-align: right;
@@ -53,7 +53,7 @@
 }
 
 
-.pos .pos-receipt-container.sh_receipt_content > div {font-size: 8px !important;}
+.pos .pos-receipt-container.sh_receipt_content > div {font-size: 18px !important;}
 
 .pos-receipt-print {
     width: 176px !important;
@@ -64,19 +64,19 @@
     top: 0;
     text-align: left;
     direction: ltr;
-    font-size: 16px !important;
+    font-size: 18px !important;
     color: #000000;
 }
 
 @media print {
     .pos .pos-receipt {
-        font-size: 10px !important;
+        font-size: 18px !important;
         width: 176px !important;
     }
 }
 
 
-.sh_pos_receipt.pos-receipt .sh_address{font-size: 12px;text-align: center;}
+.sh_pos_receipt.pos-receipt .sh_address{font-size: 18px;text-align: center;}
 .sh_pos_receipt.pos-receipt .sh-company-name h5{font-weight: bold;margin: 10px 5px;font-size: 24px;}
 .sh_pos_receipt.pos-receipt table.sh-receipt-header,
 .sh_pos_receipt.pos-receipt .sh-orderline-header .sh_orderline_table{table-layout: fixed;word-break: break-word;padding-bottom: 8px;width: 100%;font-weight: bold;}
