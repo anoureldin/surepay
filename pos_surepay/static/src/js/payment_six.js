@@ -1,5 +1,5 @@
 /* global timapi */
-/*function send_Amount(Amount)
+function send_Amount(Amount)
     {
         try {
              var status = Android.startPayment(Amount.toString());
@@ -23,41 +23,8 @@
             } catch (error) {
               console.error(error);
         }
-    }*/
-
-function sendAmount(EnteredAmount, successCallback, errorCallback, onConnectFailed) {
-    try {
-        // Simulate interaction with a payment system, such as calling Android API
-        var status = Android.startPayment(EnteredAmount.toString());
-
-        // Handle different payment statuses
-        switch (status.toLowerCase()) {
-            case "success":
-                console.log("Approved");
-                successCallback("Transaction successful"); // Call success callback
-                break;
-            case "failed":
-                console.log("Transaction failed");
-                errorCallback("Transaction failed"); // Call error callback
-                break;
-            default:
-                console.warn("Invalid payment status:", status);
-                errorCallback("Invalid payment status"); // Call error callback
-        }
-    } catch (error) {
-        console.error("Error during payment:", error);
-        onConnectFailed("Connection failed: " + error.message); // Call connection failed callback
     }
-}
 
-/*function paymentCallback(status) {
-      // Check if input is a string
-      if (typeof status !== 'string') {
-        console.error("Error: paymentCallback requires a string input.");
-        return;
-      }
-    }
-*/
 odoo.define('pos_surepay.payment', function (require) {
 "use strict";
 
@@ -146,14 +113,14 @@ var PaymentSix = PaymentInterface.extend({
     /**
      * @override
      */
-    /*
+    
     send_payment_request: function () {
         var Amount =this.pos.get_order().selected_paymentline.amount*100;
         this._super.apply(this, arguments);
         this.pos.get_order().selected_paymentline.set_payment_status('waitingCard');
         return send_Amount(Amount);
     },
-    */
+    
     
      * @override
      
