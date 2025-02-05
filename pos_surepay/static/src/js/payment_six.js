@@ -1,45 +1,38 @@
 /* global timapi */
-function send_Amount(Amount) 
-{
-    try {
-        var response = Android.startPayment(Amount.toString());
-
-        if (response.includes("|")) 
-        {
-            var responseArray = response.split("|");
-
-            alert("Response Array: " + responseArray.join(", "));
-            
-            var status = responseArray[0];
-            
-            switch (status) 
-            {
-                case "0":  // success
-                    console.log("Approved");
-                    return new Promise((resolve) => {    
+function send_Amount(Amount)
+    {
+        try {
+             var status = Android.startPayment(Amount.toString());
+            // Handle different payment statuses
+            switch (status.toLowerCase()) {
+                case "success":
+                  console.log("Approved");
+                  return new Promise((resolve) => 
+                    {    
                         this.transactionResolve = resolve;
                         this.transactionResolve(true); 
-                    });
+                     });
                 break;
-                case "1":  // failed
-                    console.log("Retry");
-                    return Promise.resolve();
-                break;
+                case "failed":
+                 console.log("Retry");
+                 return Promise.resolve();
+                  break;
                 default:
-                    console.warn("Invalid payment status:", status);
-            }
-        } else 
-        {
-            console.warn("Error response format:", response);
-            alert("Error response: " + response); 
-            return Promise.resolve(); 
+              console.warn("Invalid payment status:", status);
+          }
+            } catch (error) {
+              console.error(error);
         }
-    } catch (error) {
-        console.error(error);
     }
-}
 
-
+/*function paymentCallback(status) {
+      // Check if input is a string
+      if (typeof status !== 'string') {
+        console.error("Error: paymentCallback requires a string input.");
+        return;
+      }
+    }
+*/
 odoo.define('pos_surepay.payment', function (require) {
 "use strict";
 
@@ -128,25 +121,21 @@ var PaymentSix = PaymentInterface.extend({
     /**
      * @override
      */
-    
     send_payment_request: function () {
         var Amount =this.pos.get_order().selected_paymentline.amount*100;
         this._super.apply(this, arguments);
         this.pos.get_order().selected_paymentline.set_payment_status('waitingCard');
         return send_Amount(Amount);
     },
-    
-    
+
     /**
      * @override
      */
-     
     send_payment_reversal: function () {
         this._super.apply(this, arguments);
         this.pos.get_order().selected_paymentline.set_payment_status('reversing');
         return this._sendTransaction(timapi.constants.TransactionType.reversal);
     },
-    
 
     send_balance: function () {
         this.terminal.balanceAsync();
