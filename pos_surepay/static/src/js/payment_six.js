@@ -1,29 +1,46 @@
 /* global timapi */
-function send_Amount(Amount)
-    {
-        try {
-             var status = Android.startPayment(Amount.toString());
-            // Handle different payment statuses
-            switch (status.toLowerCase()) {
-                case "success":
-                  console.log("Approved");
-                  return new Promise((resolve) => 
-                    {    
+function send_Amount(Amount) 
+{
+    try {
+        var response = Android.startPayment(Amount.toString());
+
+        console.log("Passed Android function");
+
+        if (response.includes("|")) 
+        {
+            console.log("Passed Include function");
+
+            var responseArray = response.split("|");
+
+            console.log("Passed split function");
+
+            var status = responseArray[0];
+            
+            switch (status) 
+            {
+                case "0":  
+                    console.log("Approved");
+                    return new Promise((resolve) => {    
                         this.transactionResolve = resolve;
                         this.transactionResolve(true); 
-                     });
+                    });
+                 break;
+                case "1":  
+                    console.log("Retry");
+                    return Promise.resolve();
                 break;
-                case "failed":
-                 console.log("Retry");
-                 return Promise.resolve();
-                  break;
                 default:
-              console.warn("Invalid payment status:", status);
-          }
-            } catch (error) {
-              console.error(error);
+                    console.warn("Invalid payment status:", status);
+            }
+        } else 
+        {
+            console.warn("Error response :", response);
+            return Promise.resolve(); 
         }
+    } catch (error) {
+        console.error(error);
     }
+}
 
 /*function paymentCallback(status) {
       // Check if input is a string
