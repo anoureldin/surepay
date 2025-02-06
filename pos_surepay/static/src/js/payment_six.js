@@ -20,9 +20,17 @@ function send_Amount(Amount) {
                         cardType: responseArray[2],       // Scheme Name
                         transactionId: responseArray[6]   // Reference No
                     };
+
+
                     return new Promise((resolve) => {
+                        const paymentResponseData = {
+                            cardholderName: responseArray[1], // Masked PAN
+                            cardType: responseArray[2],       // Scheme Name
+                            transactionId: responseArray[6]   // Reference No
+                        };
+
                         this.transactionResolve = resolve;
-                        this.transactionResolve(true);
+                        this.transactionResolve(paymentResponseData);
                     });
                 case "1":
                     console.log("Retry");
@@ -115,10 +123,21 @@ odoo.define('pos_surepay.payment', function (require) {
         },
 
         send_payment_request: function () {
-            var Amount = this.pos.get_order().selected_paymentline.amount * 100;
             this._super.apply(this, arguments);
-            this.pos.get_order().selected_paymentline.set_payment_status('waitingCard');
-            return send_Amount(Amount);
+            var selected_paymentline = this.pos.get_order().selected_paymentline;
+            var Amount = selected_paymentline.amount * 100;
+            selected_paymentline.set_payment_status('waitingCard');
+            return send_Amount(Amount).then((data) => {
+              console.log('send_Amount done');
+              console.log(data);
+                  if (data) {
+                    selected_paymentline.card_type = data.cardType;
+                    selected_paymentline.cardholder_name = data.cardholderName;
+                    selected_paymentline.transaction_id = data.transactionId;
+                  } else {
+                      console.log("Invalid response data");
+                  }
+              });
         },
 
         send_payment_reversal: function () {
